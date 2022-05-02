@@ -2,61 +2,56 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // var a=10;
-  // {
-  //   console.log(a);
-  // }
-  // const x=10;  local value print 
-  // {
-  //   const x=20;
-  // }
-
-  // let x=20;   gloabal value print 
-  // {
-  //   let x=30;
-  // }
-  //  console.log(x);
-
-
-  // const s=;
-  // s=s+10;
-  // console.log(s); error variable not define 
-
-
-
-
-
-  // let s=10;
-  // s=s+10;
-  // console.log(s);
-
-
-  // let y=5;
-  // y=y+5;
-  // console.log(y);
-
-  //  Arrow funcation  
-
-   
+  //  map
   
-    // let arr =[10,20,30,40,50];
-
-    // arr.map((a)=>console.log(a));
-
-    // function intro()
-    // {
-    //   console.log("jignasha ladumor");
-    // }
-
-    let intro =()=>{
-      console.log("jignasha ladumor");
+   const data=
+   [
+    {
+      id: 101,
+      name: 'Abacavir',
+      quantity: 25,
+      price: 150,
+      expiry: 2022,
+      status: true
+    },
+    {
+      id: 102,
+      name: 'Eltrombopag',
+      quantity: 90,
+      price: 550,
+      expiry: 2021,
+      status: true
+    },
+    {
+      id: 103,
+      name: 'Meloxicam',
+      quantity: 85,
+      price: 450,
+      expiry: 2025,
+      status: false
+    },
+    {
+      id: 104,
+      name: 'Allopurinol',
+      quantity: 50,
+      price: 600,
+      expiry: 2023,
+      status: true
+    },
+    {
+      id: 105,
+      name: 'Phenytoin',
+      quantity: 63,
+      price: 250,
+      expiry: 2021,
+      status: false
     }
+  ];
 
-    intro();
-
-     console.log('fff');
-     
   
+  
+ 
+
   return (
     <div className="App">
       <header className="App-header">
