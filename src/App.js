@@ -59,28 +59,31 @@ var meta=data
   return (
       <>
          <table border="1">
-             <th>
-                <tr>name</tr>
+               <tr>
+               <th>
+                  <td>name</td>
+               </th>
+               <th>
+                  <td>id</td>
+               </th>
+               <th>
+                  <td>price</td>
+               </th>
+               <th>
+                <td>totalcost</td>
              </th>
-             <th>
-             <tr>id</tr>
-             </th>
-             <th >
-              <tr>price</tr> 
-              
-             </th>
-             <th>
-               <tr>totalcost</tr>
-             </th>
+             
+             
+            
+               </tr>
              {
                filterdata.map((value,index)=>{
                  return (
                    <tr key={index.toString()}>
-                     <td>{value.name}</td>
-                     <td>{value.id}</td>
+                      <td>{value.name}</td>
+                      <td>{value.id}</td>
                       <td>{value.price}</td> 
-                      <td>{value.totalcost}</td>
-                     <td>{meta}</td>
+                      {/* <td>{value.totalcost}</td> */}
                       {index=== 0?<td rowSpan={data.length}>{ans}</td>:null}
                    </tr>
                  )
