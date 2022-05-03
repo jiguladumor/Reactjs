@@ -47,29 +47,47 @@ function App() {
       status: false
     }
   ];
-
-  
-  
- 
-
+  //  data.map((value,index)=>console.log(value.id ,value.name));
+  //  console.log(data);
+ let  filterdata=data.filter((data,index)=>data.expiry>=2022);
+//  console.log(filterdata);
+let ans=filterdata.reduce((acc,data,index)=>acc+data.price,0);
+// console.log(ans);
+var meta=data
+  .filter((data,index)=>data.expiry>=2022)
+  .reduce((acc,data,index)=>acc+data.price,0)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React ertg
-        </a>
-      </header>
-    </div>
+      <>
+         <table border="1">
+             <th>
+                <tr>name</tr>
+             </th>
+             <th>
+             <tr>id</tr>
+             </th>
+             <th >
+              <tr>price</tr> 
+              
+             </th>
+             <th>
+               <tr>totalcost</tr>
+             </th>
+             {
+               filterdata.map((value,index)=>{
+                 return (
+                   <tr key={index.toString()}>
+                     <td>{value.name}</td>
+                     <td>{value.id}</td>
+                      <td>{value.price}</td> 
+                      <td>{value.totalcost}</td>
+                     <td>{meta}</td>
+                      {index=== 0?<td rowSpan={data.length}>{ans}</td>:null}
+                   </tr>
+                 )
+               })
+             }
+         </table>
+      </>
   );
 }
-
 export default App;
