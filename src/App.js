@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import Countru from './Container/Countru';
+import Funcountry from './Container/Funcountry';
 
 function App() {
 
@@ -102,7 +104,8 @@ const get=[
   return (
     <>
      
-
+           <Countru/>
+           <Funcountry/>
          <table border="2">
                
                  <tr>
