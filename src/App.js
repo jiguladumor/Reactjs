@@ -104,8 +104,9 @@ const get=[
   return (
     <>
      
-           <Countru/>
-           <Funcountry/>
+           <Countru  gdpvalue={6.6} />
+           <Funcountry  gdpvalue={6.6}/>
+
          <table border="2">
                
                  <tr>

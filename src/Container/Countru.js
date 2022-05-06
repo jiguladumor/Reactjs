@@ -21,7 +21,8 @@ export default class Countru extends Component {
     return (
         <>
            <div>country :{this.state.country}</div>
-           <button onClick={() => this.Changecountry()}>change</button>
+           <p>gdp:{this.props.gdpvalue}</p>
+           <button onClick={() => this.Changecountry( )}>changeproes</button>
         </>
     )
   }

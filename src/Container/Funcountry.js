@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Funcountry(props) {
+function Funcountry({gdpvalue}) {
 
 
 
@@ -24,7 +24,7 @@ function Funcountry(props) {
 
 
             <p>gdp :{gdp}</p>
-            <button onClick={() => Setgdp(5.5)}>change cdp </button>
+            <button onClick={() => Setgdp( gdpvalue)}>change cdp </button>
         </div>
     );
 }
