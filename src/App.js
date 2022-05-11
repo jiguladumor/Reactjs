@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
-
+     
+ 
   // let arr=[10,20,30,40,50]
   // console.log(arr);
     
@@ -48,7 +48,7 @@ function App() {
   //   console.log(id,name);
 
  
-   map
+   
 
   const data =
     [
@@ -103,7 +103,10 @@ function App() {
     .filter((data, index) => data.expiry >= 2022)
     .reduce((acc, data, index) => acc + data.price, 0)
   return (
+
+      
     <>
+      <time/>
       <table border="1">
         <tr>
           <th>
@@ -132,7 +135,11 @@ function App() {
             )
           })
         }
+
+         
       </table>
+
+      
     </>
   );
 }
