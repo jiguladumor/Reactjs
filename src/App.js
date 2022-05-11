@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-import Branch from './Container/Branch';
+ 
+import Time from './Container/time/Time';
+
  
 
 function App() {
 
-
-      //  <Branch/>
-      <Time></Time>
+     
          
   
 
    
   return (
-    <>
+    <p>
         
+      <Time></Time>
         
       
-    </>
+    </p>
   );
 }
 export default App;
