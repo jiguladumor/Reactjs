@@ -5,7 +5,7 @@ class Time extends Component {
         super(props);
 
         this.state={
-            time : new Date() //2
+            time : new Date() //1 
 
         }
         
@@ -23,13 +23,15 @@ class Time extends Component {
           this.tick(),1000);
     } 
     
-    componentDidUpdate=() =>{
-         
-    }
+    // componentDidUpdate(prevProps, prevState) {
+    //     if (prevState.count !== this.state.count) {
+    //         }
+    //   }
     
     render() {
         return (
             <div>     
+                
                 
                  {this.state.time.toLocaleTimeString()}    
 

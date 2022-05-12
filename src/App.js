@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
  
 import Time from './Container/time/Time';
+import Ex from './Container/time/Ex';
 
  
 
@@ -13,12 +14,15 @@ function App() {
 
    
   return (
-    <p>
+     
         
-      <Time></Time>
+    <>
+        {/* <Time></Time> */}
+        <Ex></Ex>
+    </>
         
       
-    </p>
+    
   );
 }
 export default App;
