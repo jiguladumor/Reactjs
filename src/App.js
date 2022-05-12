@@ -3,6 +3,7 @@ import './App.css';
  
 import Time from './Container/time/Time';
 import Ex from './Container/time/Ex';
+import Timefun from './Container/time/Timefun';
 
  
 
@@ -18,7 +19,8 @@ function App() {
         
     <>
         {/* <Time></Time> */}
-        <Ex></Ex>
+        {/* <Ex></Ex> */}
+        <Timefun/>
     </>
         
       
