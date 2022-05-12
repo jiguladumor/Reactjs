@@ -4,6 +4,7 @@ import './App.css';
 import Time from './Container/time/Time';
 import Ex from './Container/time/Ex';
 import Timefun from './Container/time/Timefun';
+import Funtime from './Container/time/Funtime';
 
  
 
@@ -20,7 +21,8 @@ function App() {
     <>
         {/* <Time></Time> */}
         {/* <Ex></Ex> */}
-        <Timefun/>
+        {/* <Timefun/> */}
+        <Funtime></Funtime>
     </>
         
       
