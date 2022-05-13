@@ -5,25 +5,54 @@ import Time from './Container/time/Time';
 import Ex from './Container/time/Ex';
 import Timefun from './Container/time/Timefun';
 import Funtime from './Container/time/Funtime';
+import { useEffect, useState } from 'react';
+import Loading from './Componets/Loading/Loading';
+import Home from './Container/Home/Home';
+ 
+ 
 
+
+ const Homewithloading = Loading(Home)
  
 
 function App() {
 
+   const [loading,setloading] = useState(false);
+   const [data,setData] = useState([]);
+
+   let orgData = [
+        {id :101 , name:"sagar"},
+        {
+          id:203,
+          name:'jigu'
+        },
+        {id:305 , name:"kinudikri"}
+   ]
+
      
          
   
-
+useEffect( 
+  ()=>{
+      setloading(true);
+       setTimeout( () => {setloading(false); setData(orgData)},2000);
+         
+       
+  },
+  []
+)
+   console.log(loading,data);
    
-  return (
+  return(
      
         
-    <>
-        {/* <Time></Time> */}
-        {/* <Ex></Ex> */}
-        {/* <Timefun/> */}
-        <Funtime></Funtime>
-    </>
+       <>
+         <Homewithloading  
+          isloading ={loading}
+          data={data}
+         />
+       
+        </>
         
       
     

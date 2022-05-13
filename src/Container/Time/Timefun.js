@@ -16,7 +16,7 @@ function Timefun(props) {
                      //componets will unmount 
                      clearInterval(timeid);
                  }
-        }, []
+        }, [time]
     )
     return (
         <div>
